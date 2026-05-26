@@ -1,0 +1,1 @@
+declare module '@pine-ui/tokens/css' {}

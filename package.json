@@ -1,0 +1,30 @@
+{
+  "name": "pine-ui",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Modern React component library with design tokens",
+  "license": "MIT",
+  "author": "Pine UI",
+  "packageManager": "pnpm@10.33.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/pine-ui"
+  },
+  "homepage": "https://github.com/yourusername/pine-ui",
+  "bugs": {
+    "url": "https://github.com/yourusername/pine-ui/issues"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check"
+  },
+  "devDependencies": {
+    "turbo": "^2.9.14"
+  }
+}

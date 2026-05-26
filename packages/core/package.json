@@ -1,0 +1,57 @@
+{
+  "name": "@jhonathanpinheiro/pine-ui-core",
+  "version": "0.1.1",
+  "description": "React component library for Pine UI",
+  "license": "MIT",
+  "author": "Pine UI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/pine-ui",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/yourusername/pine-ui#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/pine-ui/issues"
+  },
+  "keywords": ["react", "components", "ui", "design-system"],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --external react",
+    "dev": "tsup src/index.ts --format esm --dts --external react --watch"
+  },
+  "dependencies": {
+    "@jhonathanpinheiro/pine-ui-tokens": "workspace:*",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "react-dom": {
+      "optional": false
+    }
+  },
+  "devDependencies": {
+    "@storybook/types": "^8.6.14",
+    "@types/react": "^18.3.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}

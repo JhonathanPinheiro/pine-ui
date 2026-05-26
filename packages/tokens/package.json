@@ -1,0 +1,42 @@
+{
+  "name": "@jhonathanpinheiro/pine-ui-tokens",
+  "version": "0.1.1",
+  "description": "Design tokens for Pine UI - colors, spacing, typography",
+  "license": "MIT",
+  "author": "Pine UI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/pine-ui",
+    "directory": "packages/tokens"
+  },
+  "homepage": "https://github.com/yourusername/pine-ui#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/pine-ui/issues"
+  },
+  "keywords": ["design-tokens", "tokens", "css-variables", "react"],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./css": {
+      "types": "./dist/tokens.css.d.ts",
+      "import": "./dist/tokens.css",
+      "default": "./dist/tokens.css"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+"scripts": {
+  "build": "tsup src/index.ts --format esm --dts && cp src/tokens.css dist/tokens.css && cp src/tokens.css.d.ts dist/tokens.css.d.ts && cp src/tokens.css ../../apps/storybook/src/styles.css"
+},
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}
