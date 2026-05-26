@@ -1,6 +1,6 @@
 {
   "name": "pine-ui",
-  "version": "0.1.5",
+  "version": "0.1.9",
   "private": true,
   "description": "Modern React component library with design tokens",
   "license": "MIT",
@@ -22,9 +22,12 @@
     "build": "pnpm --filter @pine-ui/tokens run build && pnpm --filter @pine-ui/react run build",
     "dev": "turbo dev",
     "storybook": "turbo storybook",
-    "publish:all": "pnpm --filter @pine-ui/tokens publish --access=public --no-git-checks && pnpm --filter @pine-ui/react publish --access=public --no-git-checks",
-    "version:packages:patch": "pnpm --filter @pine-ui/tokens exec npm version patch --no-git-tag-version && pnpm --filter @pine-ui/react exec npm version patch --no-git-tag-version",
-    "release:patch": "npm version patch && npm run version:packages:patch && npm run build && npm run publish:all && git push --follow-tags"
+    "publish:all": "pnpm -r publish --access=public --no-git-checks",
+    "version:patch": "pnpm -r exec npm version patch --no-git-tag-version",
+    "version:minor": "pnpm -r exec npm version minor --no-git-tag-version",
+    "version:major": "pnpm -r exec npm version major --no-git-tag-version",
+    "release:patch": "git add . && git commit -m \"chore: release\" && npm run version:patch && npm run build && npm run publish:all && git push --follow-tags",
+    "release:minor": "git add . && git commit -m \"chore: release\" && npm run version:minor && npm run build && npm run publish:all && git push --follow-tags"
   },
   "devDependencies": {
     "turbo": "^2.9.14"
