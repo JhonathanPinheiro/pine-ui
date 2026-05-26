@@ -1,7 +1,7 @@
 {
   "name": "@pine-ui/storybook",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.1.9",
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build": "storybook build"
