@@ -14,7 +14,7 @@ importers:
 
   apps/storybook:
     dependencies:
-      '@pine-ui/core':
+      '@pine-ui/react':
         specifier: workspace:*
         version: link:../../packages/core
       '@pine-ui/tokens':

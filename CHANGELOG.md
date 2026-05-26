@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release
 - Design tokens package (@pine-ui/tokens) with colors, spacing, typography
-- Core components package (@pine-ui/core) with Button component
+- Core components package (@pine-ui/react) with Button component
 - Storybook integration for component development
 - TypeScript support with full type declarations
 - CSS variable support for design tokens

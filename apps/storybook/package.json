@@ -1,13 +1,13 @@
 {
   "name": "@pine-ui/storybook",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build": "storybook build"
   },
   "dependencies": {
-    "@pine-ui/core": "workspace:*",
+    "@pine-ui/react": "workspace:*",
     "@pine-ui/tokens": "workspace:*",
     "react": "^18.3.0",
     "react-dom": "^18.3.0"
