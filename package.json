@@ -22,7 +22,12 @@
     "build": "pnpm --filter @pine-ui/tokens run build && pnpm --filter @pine-ui/react run build",
     "dev": "turbo dev",
     "storybook": "turbo storybook",
-    "publish:all": "pnpm --filter @pine-ui/tokens publish --access=public --no-git-checks && pnpm --filter @pine-ui/react publish --access=public --no-git-checks"
+    "publish:all": "pnpm --filter @pine-ui/tokens publish --access=public --no-git-checks && pnpm --filter @pine-ui/react publish --access=public --no-git-checks",
+    "version:patch": "npm version patch",
+    "version:minor": "npm version minor",
+    "version:major": "npm version major",
+    "release:patch": "npm run version:patch && npm run build && npm run publish:all && git push --follow-tags",
+    "release:minor": "npm run version:minor && npm run build && npm run publish:all && git push --follow-tags"
   },
   "devDependencies": {
     "turbo": "^2.9.14"
