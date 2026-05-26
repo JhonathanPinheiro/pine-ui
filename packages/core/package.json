@@ -1,17 +1,16 @@
 {
-  "name": "@jhonathanpinheiro/pine-ui-core",
+  "name": "@pine-ui/core",
   "version": "0.1.3",
   "description": "React component library for Pine UI",
   "license": "MIT",
   "author": "Pine UI",
+  "homepage": "https://github.com/jhonathanpinheiro/pine-ui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JhonathanPinheiro/pine-ui",
-    "directory": "packages/core"
+    "url": "https://github.com/jhonathanpinheiro/pine-ui.git"
   },
-  "homepage": "https://github.com/JhonathanPinheiro/pine-ui#readme",
   "bugs": {
-    "url": "https://github.com/JhonathanPinheiro/pine-ui/issues"
+    "url": "https://github.com/jhonathanpinheiro/pine-ui/issues"
   },
   "keywords": ["react", "components", "ui", "design-system"],
   "type": "module",
@@ -32,7 +31,7 @@
     "dev": "tsup src/index.ts --format esm --dts --external react --watch"
   },
   "dependencies": {
-    "@jhonathanpinheiro/pine-ui-tokens": "workspace:*",
+    "@pine-ui/tokens": "workspace:*",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0"
   },
