@@ -45,11 +45,9 @@ import { Button } from '@pine-ui/react'
 <Button variant="link">Saiba mais</Button>
 
 // Tamanhos
-<Button size="xs">Extra Small</Button>
-<Button size="sm">Small</Button>
-<Button size="md">Medium</Button>   {/* padrão */}
-<Button size="lg">Large</Button>
-<Button size="xl">Extra Large</Button>
+<Button size="small">Small</Button>
+<Button size="medium">Medium</Button>   {/* padrão */}
+<Button size="large">Large</Button>
 
 // Estados
 <Button loading>Salvando...</Button>
