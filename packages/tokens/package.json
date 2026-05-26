@@ -6,12 +6,12 @@
   "author": "Pine UI",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/pine-ui",
+    "url": "https://github.com/JhonathanPinheiro/pine-ui",
     "directory": "packages/tokens"
   },
-  "homepage": "https://github.com/yourusername/pine-ui#readme",
+  "homepage": "https://github.com/JhonathanPinheiro/pine-ui#readme",
   "bugs": {
-    "url": "https://github.com/yourusername/pine-ui/issues"
+    "url": "https://github.com/JhonathanPinheiro/pine-ui/issues"
   },
   "keywords": ["design-tokens", "tokens", "css-variables", "react"],
   "type": "module",

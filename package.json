@@ -8,11 +8,11 @@
   "packageManager": "pnpm@10.33.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/pine-ui"
+    "url": "https://github.com/JhonathanPinheiro/pine-ui"
   },
-  "homepage": "https://github.com/yourusername/pine-ui",
+  "homepage": "https://github.com/JhonathanPinheiro/pine-ui",
   "bugs": {
-    "url": "https://github.com/yourusername/pine-ui/issues"
+    "url": "https://github.com/JhonathanPinheiro/pine-ui/issues"
   },
   "workspaces": [
     "packages/*",
