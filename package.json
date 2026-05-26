@@ -19,10 +19,11 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "type-check": "turbo run type-check"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "publish:tokens": "npm publish --access=public --workspace=packages/tokens",
+    "publish:core": "npm publish --access=public --workspace=packages/core",
+    "publish:all": "npm publish --access=public --workspace=packages/tokens --workspace=packages/core"
   },
   "devDependencies": {
     "turbo": "^2.9.14"
