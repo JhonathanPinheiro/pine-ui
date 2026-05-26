@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react'
-import '../src/styles.css'
+import '@pine-ui/tokens/css'
+import '../src/global.css'
 
 const preview: Preview = {
   parameters: {
