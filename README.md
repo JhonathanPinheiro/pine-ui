@@ -1,64 +1,78 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:085041,50:0F6E56,100:1D9E75&height=180&section=header&text=Pine%20UI&fontSize=64&fontColor=ffffff&fontAlignY=42&desc=Design%20system%20React%20com%20dark%20mode%20nativo%20e%20tokens%20semânticos&descAlignY=62&descSize=15&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:085041,50:0F6E56,100:1D9E75&height=180&section=header&text=Pine%20UI&fontSize=64&fontColor=ffffff&fontAlignY=42&desc=Modern%20React%20Design%20System&descAlignY=62&descSize=16&animation=fadeIn" />
 
 <br/>
 
 [![npm](https://img.shields.io/npm/v/@pine-ui/react?style=flat-square&color=1D9E75&label=%40pine-ui%2Freact)](https://www.npmjs.com/package/@pine-ui/react)
 [![npm](https://img.shields.io/npm/v/@pine-ui/tokens?style=flat-square&color=085041&label=%40pine-ui%2Ftokens)](https://www.npmjs.com/package/@pine-ui/tokens)
+[![npm downloads](https://img.shields.io/npm/dm/@pine-ui/react?style=flat-square&color=1D9E75)](https://www.npmjs.com/package/@pine-ui/react)
+[![Storybook](https://img.shields.io/badge/Storybook-Chromatic-ff4785?style=flat-square&logo=storybook&logoColor=white)](https://6a16e1f903693d77ee440b2b-bephsxasxl.chromatic.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-1D9E75?style=flat-square)](LICENSE)
 
-**Componentes React acessíveis, tipados e com dark mode nativo via CSS Variables.**
+### Modern React Design System
 
-[npm — @pine-ui/react](https://www.npmjs.com/package/@pine-ui/react) · [npm — @pine-ui/tokens](https://www.npmjs.com/package/@pine-ui/tokens) · [Reportar bug](https://github.com/jhonathanpinheiro/pine-ui/issues)
+Componentes React acessíveis, tipados e escaláveis com design tokens semânticos e dark mode nativo via CSS Variables.
+
+[📚 Storybook](https://6a16e1f903693d77ee440b2b-bephsxasxl.chromatic.com/) · [📦 @pine-ui/react](https://www.npmjs.com/package/@pine-ui/react) · [🎨 @pine-ui/tokens](https://www.npmjs.com/package/@pine-ui/tokens) · [🐛 Reportar bug](https://github.com/jhonathanpinheiro/pine-ui/issues)
 
 </div>
 
 ---
 
-## Por que Pine UI?
+# ✨ Features
 
-| | |
-|---|---|
-| 🌙 **Dark mode nativo** | CSS Variables puras — zero runtime, sem flash de tema |
-| 🔒 **TypeScript strict** | Todas as props tipadas, `forwardRef` em todos os componentes |
-| ♿ **Acessível por padrão** | `aria-*`, `focus-visible` e navegação por teclado em tudo |
-| 🌳 **Tree-shakeable** | Bundle ESM — importe só o que usar |
-| 🎨 **Tokens semânticos** | Cores, espaçamentos e tipografia como CSS Variables reutilizáveis |
-| 📦 **Monorepo** | Tokens e componentes em pacotes independentes |
+- 🌙 Dark mode nativo
+- ♿ Componentes acessíveis
+- 🔒 TypeScript strict
+- 🎨 Design tokens semânticos
+- 🌳 Tree-shakeable
+- 📦 Monorepo escalável
+- 📚 Storybook hospedado no Chromatic
+- ⚡ CSS Variables sem runtime
+- 🧩 Componentes desacoplados e reutilizáveis
 
 ---
 
-## Instalação
+# 📚 Documentação
+
+Explore os componentes, variantes, estados e tokens diretamente no Storybook:
+
+👉 **[Abrir documentação](https://6a16e1f903693d77ee440b2b-bephsxasxl.chromatic.com/)**
+
+---
+
+# 🚀 Instalação
 
 ```bash
-# instala os componentes e os tokens
 npm install @pine-ui/react @pine-ui/tokens
 ```
 
-**Adicione os tokens CSS no root do seu projeto:**
+Adicione os tokens CSS no root da aplicação:
 
 ```tsx
-// app/layout.tsx (Next.js) ou main.tsx (Vite)
+// main.tsx ou app/layout.tsx
 import '@pine-ui/tokens/css'
 ```
 
 ---
 
-## Uso rápido
+# ⚡ Uso rápido
 
 ```tsx
+import '@pine-ui/tokens/css'
 import { Button } from '@pine-ui/react'
 
 export function App() {
   return (
-    <Button variant="primary" size="md">
+    <Button variant="primary">
       Salvar alterações
     </Button>
   )
 }
 ```
+
 
 ---
 
@@ -106,7 +120,7 @@ import '@pine-ui/tokens/css'
 .meu-componente {
   background: var(--color-brand);      /* #1D9E75 */
   color:      var(--color-text);
-  padding:    var(--radius-md);
+  padding:    var(--space-md);
   font-family: var(--font-sans);
 }
 ```

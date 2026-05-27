@@ -7,7 +7,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-1D9E75?style=flat-square)](../../LICENSE)
 
-**Componentes React tipados, acessíveis e com dark mode nativo.**
+**Componentes React acessíveis, escaláveis e tipados com design tokens semânticos e dark mode nativo.**
 
 </div>
 
@@ -99,9 +99,11 @@ Os componentes usam CSS Variables do `@pine-ui/tokens`. Você pode sobrescrever 
 
 ```css
 :root {
-  --color-brand:       #seu-verde;
-  --color-brand-hover: #seu-verde-hover;
-  --radius-md:         0.75rem;
+  --color-brand: #22c55e;
+  --color-brand-hover: #16a34a;
+
+  --radius-md: 0.75rem;
+  --space-md: 1rem;
 }
 ```
 
@@ -115,13 +117,16 @@ Os componentes usam CSS Variables do `@pine-ui/tokens`. Você pode sobrescrever 
 
 ---
 
-## Contribuindo
+## Desenvolvimento local
 
 ```bash
 git clone https://github.com/jhonathanpinheiro/pine-ui
+
 cd pine-ui
+
 pnpm install
-pnpm run storybook  # localhost:6006
+pnpm run build
+pnpm run storybook
 ```
 
 ---
